@@ -5,7 +5,8 @@ body{
 }
 
 nav{
-    margin-bottom: 70px;
+    margin-top: -20px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -15,12 +16,12 @@ nav a{
 }
 
 a:hover{
-    color: rgb(0, 255, 34);
+    color: rgb(230, 109, 109);
 }
 
 #prin{
     width: 700px;
-    background-color:rgb(19, 107, 58);
+    background-color:rgb(27, 136, 76);
     margin: auto;   
     padding: 40px;
     height: 700px;
