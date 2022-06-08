@@ -5,18 +5,25 @@ body{
 }
 
 nav{
+    width: 700px;
+    display: block;
+    margin: auto;
     margin-top: -20px;
     margin-bottom: 50px;
     text-align: center;
+    font-family: monospace;
+    padding: 7px;
+    background-color: rgb(37, 102, 65);
+    border-radius: 10px;
 }
 
 nav a{
     text-decoration: none;
-    color: rgb(28, 68, 156);
+    color: rgb(255, 255, 255);
 }
 
 a:hover{
-    color: rgb(230, 109, 109);
+    color: #00a07d;
 }
 
 #prin{
@@ -26,6 +33,7 @@ a:hover{
     padding: 40px;
     height: 700px;
     border-radius: 15px;
+    box-shadow: 10px 10px 10px rgb(26, 88, 57);
 }
 
 .left{
@@ -40,4 +48,8 @@ a:hover{
 
 #top{
     text-align: center;
+}
+
+#myname{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
