@@ -6,7 +6,7 @@ body{
 }
 
 nav{
-    width: 700px;
+    width: 710px;
     display: block;
     margin: auto;
     margin-top: 20px;
@@ -21,7 +21,7 @@ nav{
 nav a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 14px;
+    font-size: 12px;
 }
 
 a:hover{
@@ -33,7 +33,7 @@ a:hover{
     background-color:rgba(5, 7, 122, 0.795);
     margin: auto;   
     padding: 40px;
-    height: 750px;
+    height: 760px;
     border-radius: 15px;
     box-shadow: 10px 10px 10px rgb(18, 58, 70);
 }
