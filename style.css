@@ -54,10 +54,23 @@ a:hover{
 
 .myname{
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 0px;
+    margin-top: 30px;
+}
+
+.top_icons{
+    width: 650px;
+    display: block;
+    margin: auto;
+}
+
+.linke{
+    margin-right: 80px;
+}
+
+.teste{
+    margin-right: 70px;
 }
 
 .imgteste{
-    display: block;
-    margin-bottom: 0px;
+    border-radius: 10px;
 }
