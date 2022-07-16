@@ -4,6 +4,13 @@
     box-sizing: content-box;
 }
 
+a{
+    color: white;
+    opacity: 0.4;
+    text-decoration: none;
+}
+
+
 body{
     width: 100%;
     background-size: contain;
@@ -36,11 +43,6 @@ header h2{
     justify-content: space-evenly;
 }
 
-a{
-    color: white;
-    opacity: 0.4;
-    text-decoration: none;
-}
 
 a:hover{
     text-decoration: dotted;
@@ -72,21 +74,36 @@ main{
     margin: 5px;
 }
 
-footer{
-    color: white;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 0;
-    position: fixed; /* PARA FIXAR EMBAIXO */
-}
+@media screen and (max-width:567px) {
+    .aqui{
+        display: none;
+    }
 
-footer h3{
-    margin-bottom: 10px;
-}
+    #links nav a{
+        margin-left: 15px;
+    }
 
-footer a{
-    margin: 10px 40px;
+    
+
+    main{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+
+
+    #tryber{
+        width: 60%;
+        box-shadow: 3px -3px 3px  rgb(32, 87, 70);
+        margin-bottom: 1rem;
+    }
+
+    #list-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        text-align: center;
+    }
 }
 
