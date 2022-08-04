@@ -1,3 +1,5 @@
+//definitions
+
 const habilidadesPlink = document.getElementById('habiliti')
 const linkOther = document.getElementById('other')
 const linkInfo = document.getElementById('info-me')
@@ -7,7 +9,10 @@ const otherH = document.querySelector('.outras')
 const img = document.getElementById('tryber')
 const title = document.getElementById('title')
 const header = document.getElementById('header')
+const conselho = document.getElementById('conselho')
+const dark = document.getElementById('dark')
 
+//functions
 
 const areasFunc = (path) => {
     for(let i of path.children){
@@ -29,6 +34,23 @@ const darkTheme = () => {
     }
 }
 
+const showAdvice = async () => {
+    const url = `https://api.adviceslip.com/advice`
+    const response = await fetch(url)
+    const object = await response.json()
+    return object
+}
+
+const renderAdvice = async () => {
+    const obj = await showAdvice()
+    console.log(obj)
+    const {slip:{advice}} = obj;
+    conselho.innerText = `"${advice}"`;
+    conselho.style.fontStyle = 'italic'
+    conselho.style.fontWeight = 700;
+}
+
+//calls
 habilidadesPlink.addEventListener('click',() => {
     areasFunc(habilidadesP)
     setTimeout(() => areasFunc(habilidadesP),3000)
@@ -44,4 +66,6 @@ linkInfo.addEventListener('click',() => {
     setTimeout(() => areasFunc(infoMe),3000)
 }) 
 
-img.addEventListener('click',darkTheme)
+dark.addEventListener('click',darkTheme)
+
+window.onload = renderAdvice;
